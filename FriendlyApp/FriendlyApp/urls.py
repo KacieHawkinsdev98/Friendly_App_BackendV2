@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', RedirectView.as_view(url='/friendly/')),
     path('api/auth/', include('authentication.urls')),
-    path('api/user', include('user.urls')),
+    # path('api/user', include('user.urls')),
 
 ]
