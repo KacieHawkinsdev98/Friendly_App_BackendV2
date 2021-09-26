@@ -19,8 +19,10 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('', RedirectView.as_view(url='/friendly/')),
+    path ('', RedirectView.as_view(url='/friendly')),
     path('api/auth/', include('authentication.urls')),
+    path('', include('Friend_Request.urls')),
+    path('', include('Profile.urls')),
     # path('api/user', include('user.urls')),
 
 ]
