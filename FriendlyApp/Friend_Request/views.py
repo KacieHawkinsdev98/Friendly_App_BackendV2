@@ -1,4 +1,4 @@
-from FriendlyApp.Friend_Request.models import Friend_Request
+from .models import Friend_Request
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.urls import reverse 
@@ -6,7 +6,7 @@ from .models import User
 from rest_framework import status
 
 
-@login_required 
+
 def send_friend_request(request, userID):
     from_user = request.user 
     to_user = User.objects.get(id=userID)
@@ -18,7 +18,7 @@ def send_friend_request(request, userID):
         return HttpResponse('friend request was already sent')
 
 
-@login_required
+
 def accept_friend_request(request, requestID):
     friend_request = Friend_Request.objects.get(id=requestID)
     if friend_request.to_user == request.user:

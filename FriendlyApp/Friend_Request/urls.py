@@ -1,6 +1,6 @@
-from FriendlyApp.Friend_Request.views import accept_friend_request, send_friend_request
+from .views import accept_friend_request, send_friend_request
 from django.urls import path 
-from Friend_Request import views
+
 
 
 
