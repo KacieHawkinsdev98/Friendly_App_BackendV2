@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'Profile',
-    'Friend_Request'
+    'Friend_Request',
+    'friendship',
 ]
 
 MIDDLEWARE = [

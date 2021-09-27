@@ -25,6 +25,7 @@ urlpatterns = [
     path('api/auth/', include('authentication.urls')),
     path('', include('Friend_Request.urls')),
     path('', include('Profile.urls')),
+    path('friendship/', include('friendship.urls'))
     # path('api/user', include('user.urls')),
 
 ]
