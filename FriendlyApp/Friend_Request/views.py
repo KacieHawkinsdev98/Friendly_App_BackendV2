@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.urls import reverse 
 from .models import User
-from rest_framework import status
+
 
 
 

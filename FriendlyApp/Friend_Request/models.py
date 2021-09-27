@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 
 class Friend_Request(models.Model):
     from_user = models.ForeignKey(User, 
-    related_name='from_profile',on_delete=models.CASCADE)
+    related_name='from_user',on_delete=models.CASCADE)
     to_user = models.ForeignKey(
-        User, related_name='to_profile', on_delete=models.CASCADE
+        User, related_name='to_user', on_delete=models.CASCADE
     )
 
     
