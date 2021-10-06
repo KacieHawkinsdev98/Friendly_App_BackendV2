@@ -11,6 +11,7 @@ djangorestframework = "*"
 djangorestframework-simplejwt = "*"
 pillow = "*"
 
+
 [dev-packages]
 
 [requires]
